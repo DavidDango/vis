@@ -27726,6 +27726,9 @@ var EndPoints = function () {
         case 'bar':
           Bar.draw(ctx, arrowData);
           break;
+        case 'diamond':
+          Diamond.draw(ctx, arrowData);
+          break;
         case 'arrow': // fall-through
         default:
           Arrow.draw(ctx, arrowData);
