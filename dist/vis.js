@@ -27679,8 +27679,8 @@ var Diamond = function () {
       ctx.lineTo(points[1].x, points[1].y);
       ctx.lineTo(points[2].x, points[2].y);
       ctx.lineTo(points[3].x, points[3].y);
-      ctx.stroke();
       ctx.closePath();
+      ctx.stroke();
 
       for (var i = 0; i < extra.length; ++i) {
         ctx.beginPath();
@@ -27689,7 +27689,9 @@ var Diamond = function () {
           ctx.lineTo(extra[i][j].x, extra[i][j].y);
         }
         ctx.closePath();
+        ctx.stroke();
       }
+      ctx.stroke();
     }
   }]);
   return Diamond;
