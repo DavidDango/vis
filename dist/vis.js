@@ -27520,10 +27520,10 @@ var EndPoint = function () {
     key: 'drawPath',
     value: function drawPath(ctx, points) {
       ctx.beginPath();
-      ctx.moveTo(1, 1);
-      ctx.lineTo(-1, 1);
-      ctx.lineTo(-1, -1);
-      ctx.lineTo(1, -1);
+      ctx.moveTo(points[0].x, points[0].y);
+      for (var i = 1; i < points.length; ++i) {
+        ctx.lineTo(points[i].x, points[i].y);
+      }
       ctx.closePath();
     }
   }]);
@@ -27640,6 +27640,56 @@ var Bar = function () {
     }
   }]);
   return Bar;
+}();
+
+/**
+ * Drawing methods for the bar endpoint.
+ */
+
+
+var Diamond = function () {
+  function Diamond() {
+    (0, _classCallCheck3['default'])(this, Diamond);
+  }
+
+  (0, _createClass3['default'])(Diamond, null, [{
+    key: 'draw',
+
+
+    /**
+     * Draw this shape at the end of a line.
+     *
+     * @param {CanvasRenderingContext2D} ctx
+     * @param {ArrowData} arrowData
+     * @static
+     */
+    value: function draw(ctx, arrowData) {
+      /*
+          var points = [
+            {x:0, y:0.5},
+            {x:0, y:-0.5}
+          ];
+      
+          EndPoint.transform(points, arrowData);
+          ctx.beginPath();
+          ctx.moveTo(points[0].x, points[0].y);
+          ctx.lineTo(points[1].x, points[1].y);
+          ctx.stroke();
+      */
+
+      var points = [{ x: 0, y: 0.5 }, { x: 0.5, y: 0 }, { x: 0, y: -0.5 }, { x: -0.5, y: 0 }];
+
+      EndPoint.transform(points, arrowData);
+
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, points[0].y);
+      ctx.lineTo(points[1].x, points[1].y);
+      ctx.lineTo(points[2].x, points[2].y);
+      ctx.lineTo(points[3].x, points[3].y);
+      ctx.stroke();
+    }
+  }]);
+  return Diamond;
 }();
 
 /**
