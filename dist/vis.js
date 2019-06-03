@@ -27520,16 +27520,10 @@ var EndPoint = function () {
     key: 'drawPath',
     value: function drawPath(ctx, points) {
       ctx.beginPath();
-      ctx.moveTo(points[0].x, points[0].y);
-      for (var i = 1; i < points.length; ++i) {
-        ctx.lineTo(points[i].x, points[i].y);
-      }
-      ctx.closePath();
-      ctx.beginPath();
-      ctx.moveTo(points[0].x + 1, points[0].y + 1);
-      for (var i = 1; i < points.length; ++i) {
-        ctx.lineTo(points[i].x + 1, points[i].y + 1);
-      }
+      ctx.moveTo(1, 1);
+      ctx.lineTo(-1, 1);
+      ctx.lineTo(-1, -1);
+      ctx.lineTo(1, -1);
       ctx.closePath();
     }
   }]);
