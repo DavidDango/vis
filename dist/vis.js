@@ -27677,7 +27677,7 @@ var Diamond = function () {
           ctx.stroke();
       */
 
-      var points = [{ x: 0, y: 0 }, { x: 0.5, y: 0.5 }, { x: 1, y: 0 }, { x: 0.5, y: -0.5 }];
+      var points = [{ x: 0, y: 0 }, { x: -0.5, y: 0.5 }, { x: -1, y: 0 }, { x: -0.5, y: -0.5 }];
 
       EndPoint.transform(points, arrowData);
 
