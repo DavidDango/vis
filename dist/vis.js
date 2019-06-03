@@ -27667,7 +27667,26 @@ var Diamond = function () {
 
       var points = [{ x: 0, y: 0 }, { x: -0.5, y: 0.5 }, { x: -1, y: 0 }, { x: -0.5, y: -0.5 }];
 
-      var extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
+      /*
+      var extraq1 = [[{x:0, y:-0.4}, {x:-0.2, y:-0.4}], [{x:-0.1, y:-0.5}, {x:-0.1, y:-0.3}]]
+      var extraq2 = [[{x:0, y:0.4}, {x:-0.2, y:0.4}], [{x:-0.1, y:0.5}, {x:-0.1, y:0.3}]]
+      var extraq3 = [[{x:-0.8, y:-0.4}, {x:-1, y:-0.4}], [{x:-0.9, y:-0.5}, {x:-0.9, y:-0.3}]]
+      var extraq4 = [[{x:-0.8, y:0.4}, {x:-1, y:0.4}], [{x:-0.9, y:0.5}, {x:-0.9, y:0.3}]]
+       var temp = [{x:-0.1, y:-0.4}, {x:-0.1, y:0.4}, {x:-0.9, y:-0.4}, {x:-0.9, y:0.4}]
+       EndPoint.transform(temp, arrowData);
+      */
+
+      var extra = 0;
+
+      if (arrowData.angle > 7 * Math.PI / 4 && arrowData.angle < Math.PI / 4) {
+        extra = [[{ x: 0, y: -0.4 }, { x: -0.2, y: -0.4 }], [{ x: -0.1, y: -0.5 }, { x: -0.1, y: -0.3 }]];
+      } else if (arrowData.angle < 3 * Math.PI / 4) {
+        extra = [[{ x: -0.8, y: -0.4 }, { x: -1, y: -0.4 }], [{ x: -0.9, y: -0.5 }, { x: -0.9, y: -0.3 }]];
+      } else if (arrowData.angle < 5 * Math.PI) {
+        extra = [[{ x: -0.8, y: 0.4 }, { x: -1, y: 0.4 }], [{ x: -0.9, y: 0.5 }, { x: -0.9, y: 0.3 }]];
+      } else {
+        extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
+      }
 
       EndPoint.transform(points, arrowData);
       for (var i = 0; i < extra.length; ++i) {
