@@ -27670,7 +27670,7 @@ var Diamond = function () {
       var extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
 
       EndPoint.transform(points, arrowData);
-      for (var i = 1; i < extra.length; ++i) {
+      for (var i = 0; i < extra.length; ++i) {
         EndPoint.transform(extra[i], arrowData);
       }
 
@@ -27681,6 +27681,7 @@ var Diamond = function () {
       ctx.lineTo(points[3].x, points[3].y);
       ctx.closePath();
       ctx.stroke();
+      ctx.fill();
 
       for (var i = 0; i < extra.length; ++i) {
         ctx.beginPath();
@@ -27691,7 +27692,6 @@ var Diamond = function () {
         ctx.closePath();
         ctx.stroke();
       }
-      ctx.stroke();
     }
   }]);
   return Diamond;
