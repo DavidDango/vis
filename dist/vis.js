@@ -27684,7 +27684,7 @@ var Diamond = function () {
       for (var i = 0; i < extra.length; ++i) {
         ctx.beginPath();
         ctx.moveTo(extra[i][0].x, extra[i][0].y);
-        for (var j = 1; i < extra[i].length; ++j) {
+        for (var j = 1; j < extra[i].length; ++j) {
           ctx.lineTo(extra[i][j].x, extra[i][j].y);
         }
       }
