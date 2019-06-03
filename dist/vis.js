@@ -27664,22 +27664,15 @@ var Diamond = function () {
      * @static
      */
     value: function draw(ctx, arrowData) {
-      /*
-          var points = [
-            {x:0, y:0.5},
-            {x:0, y:-0.5}
-          ];
-      
-          EndPoint.transform(points, arrowData);
-          ctx.beginPath();
-          ctx.moveTo(points[0].x, points[0].y);
-          ctx.lineTo(points[1].x, points[1].y);
-          ctx.stroke();
-      */
 
       var points = [{ x: 0, y: 0 }, { x: -0.5, y: 0.5 }, { x: -1, y: 0 }, { x: -0.5, y: -0.5 }];
 
+      var extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
+
       EndPoint.transform(points, arrowData);
+      for (var i = 1; i < extra.length; ++i) {
+        EndPoint.transform(extra[i], arrowData);
+      }
 
       ctx.beginPath();
       ctx.moveTo(points[0].x, points[0].y);
@@ -27687,6 +27680,14 @@ var Diamond = function () {
       ctx.lineTo(points[2].x, points[2].y);
       ctx.lineTo(points[3].x, points[3].y);
       ctx.stroke();
+
+      for (var i = 0; i < extra.length; ++i) {
+        ctx.beginPath();
+        ctx.moveTo(extra[i][0].x, extra[i][0].y);
+        for (var j = 1; i < extra[i].length; ++j) {
+          ctx.lineTo(extra[i][j].x, extra[i][j].y);
+        }
+      }
     }
   }]);
   return Diamond;
