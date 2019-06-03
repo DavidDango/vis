@@ -5,7 +5,7 @@
  * A dynamic, browser-based visualization library.
  *
  * @version 4.21.0
- * @date    2019-06-02
+ * @date    2019-06-03
  *
  * @license
  * Copyright (C) 2011-2017 Almende B.V, http://almende.com
@@ -28417,7 +28417,7 @@ var dom = 'dom';
 var any = 'any';
 
 // List of endpoints
-var endPoints = ['arrow', 'circle', 'bar'];
+var endPoints = ['arrow', 'circle', 'bar', 'diamond'];
 
 var allOptions = {
   configure: {
