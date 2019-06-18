@@ -28067,7 +28067,7 @@ var SomeBroad = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.75, y: -0.4 }, { x: -1.05, y: -0.4 }], [{ x: -0.9, y: -0.55 }, { x: -0.9, y: -0.25 }], [{ x: -0.8, y: -0.5 }, { x: -1, y: -0.3 }], [{ x: -1, y: -0.5 }, { x: -0.8, y: -0.3 }]];
       } else {
         extra = [[{ x: -0.75, y: 0.4 }, { x: -1.05, y: 0.4 }], [{ x: -0.9, y: 0.55 }, { x: -0.9, y: 0.25 }], [{ x: -0.8, y: 0.5 }, { x: -1, y: 0.3 }], [{ x: -1, y: 0.5 }, { x: -0.8, y: 0.3 }]];
@@ -28151,7 +28151,7 @@ var SomeMulti = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.8, y: -0.4 }, { x: -1, y: -0.4 }], [{ x: -0.9, y: -0.5 }, { x: -0.9, y: -0.3 }]];
       } else {
         extra = [[{ x: -0.8, y: 0.4 }, { x: -1, y: 0.4 }], [{ x: -0.9, y: 0.5 }, { x: -0.9, y: 0.3 }]];
