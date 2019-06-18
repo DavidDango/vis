@@ -5,7 +5,7 @@
  * A dynamic, browser-based visualization library.
  *
  * @version 4.21.0
- * @date    2019-06-04
+ * @date    2019-06-18
  *
  * @license
  * Copyright (C) 2011-2017 Almende B.V, http://almende.com
@@ -27678,12 +27678,8 @@ var AlwaysBroad = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0.05, y: -0.4 }, { x: -0.25, y: -0.4 }], [{ x: -0.1, y: -0.55 }, { x: -0.1, y: -0.25 }], [{ x: 0, y: -0.5 }, { x: -0.2, y: -0.3 }], [{ x: -0.2, y: -0.5 }, { x: 0, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.75, y: -0.4 }, { x: -1.05, y: -0.4 }], [{ x: -0.9, y: -0.55 }, { x: -0.9, y: -0.25 }], [{ x: -0.8, y: -0.5 }, { x: -1, y: -0.3 }], [{ x: -1, y: -0.5 }, { x: -0.8, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0.05, y: 0.4 }, { x: -0.25, y: 0.4 }], [{ x: -0.1, y: 0.55 }, { x: -0.1, y: 0.25 }], [{ x: 0, y: 0.5 }, { x: -0.2, y: 0.3 }], [{ x: -0.2, y: 0.5 }, { x: 0, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.75, y: 0.4 }, { x: -1.05, y: 0.4 }], [{ x: -0.9, y: 0.55 }, { x: -0.9, y: 0.25 }], [{ x: -0.8, y: 0.5 }, { x: -1, y: 0.3 }], [{ x: -1, y: 0.5 }, { x: -0.8, y: 0.3 }]];
       }
@@ -27755,12 +27751,8 @@ var AlwaysMulti = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0, y: -0.4 }, { x: -0.2, y: -0.4 }], [{ x: -0.1, y: -0.5 }, { x: -0.1, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.8, y: -0.4 }, { x: -1, y: -0.4 }], [{ x: -0.9, y: -0.5 }, { x: -0.9, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.8, y: 0.4 }, { x: -1, y: 0.4 }], [{ x: -0.9, y: 0.5 }, { x: -0.9, y: 0.3 }]];
       }
@@ -27884,12 +27876,8 @@ var NeverBroad = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0.05, y: -0.4 }, { x: -0.25, y: -0.4 }], [{ x: -0.1, y: -0.55 }, { x: -0.1, y: -0.25 }], [{ x: 0, y: -0.5 }, { x: -0.2, y: -0.3 }], [{ x: -0.2, y: -0.5 }, { x: 0, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.75, y: -0.4 }, { x: -1.05, y: -0.4 }], [{ x: -0.9, y: -0.55 }, { x: -0.9, y: -0.25 }], [{ x: -0.8, y: -0.5 }, { x: -1, y: -0.3 }], [{ x: -1, y: -0.5 }, { x: -0.8, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0.05, y: 0.4 }, { x: -0.25, y: 0.4 }], [{ x: -0.1, y: 0.55 }, { x: -0.1, y: 0.25 }], [{ x: 0, y: 0.5 }, { x: -0.2, y: 0.3 }], [{ x: -0.2, y: 0.5 }, { x: 0, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.75, y: 0.4 }, { x: -1.05, y: 0.4 }], [{ x: -0.9, y: 0.55 }, { x: -0.9, y: 0.25 }], [{ x: -0.8, y: 0.5 }, { x: -1, y: 0.3 }], [{ x: -1, y: 0.5 }, { x: -0.8, y: 0.3 }]];
       }
@@ -27958,12 +27946,8 @@ var NeverMulti = function () {
 
       var extra;
 
-      if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0, y: -0.4 }, { x: -0.2, y: -0.4 }], [{ x: -0.1, y: -0.5 }, { x: -0.1, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
+      if (arrowData.angle > -Math.PI / 2 && arrowData.angle < Math.PI / 2) {
         extra = [[{ x: -0.8, y: -0.4 }, { x: -1, y: -0.4 }], [{ x: -0.9, y: -0.5 }, { x: -0.9, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.8, y: 0.4 }, { x: -1, y: 0.4 }], [{ x: -0.9, y: 0.5 }, { x: -0.9, y: 0.3 }]];
       }
@@ -28084,11 +28068,7 @@ var SomeBroad = function () {
       var extra;
 
       if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0.05, y: -0.4 }, { x: -0.25, y: -0.4 }], [{ x: -0.1, y: -0.55 }, { x: -0.1, y: -0.25 }], [{ x: 0, y: -0.5 }, { x: -0.2, y: -0.3 }], [{ x: -0.2, y: -0.5 }, { x: 0, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
         extra = [[{ x: -0.75, y: -0.4 }, { x: -1.05, y: -0.4 }], [{ x: -0.9, y: -0.55 }, { x: -0.9, y: -0.25 }], [{ x: -0.8, y: -0.5 }, { x: -1, y: -0.3 }], [{ x: -1, y: -0.5 }, { x: -0.8, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0.05, y: 0.4 }, { x: -0.25, y: 0.4 }], [{ x: -0.1, y: 0.55 }, { x: -0.1, y: 0.25 }], [{ x: 0, y: 0.5 }, { x: -0.2, y: 0.3 }], [{ x: -0.2, y: 0.5 }, { x: 0, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.75, y: 0.4 }, { x: -1.05, y: 0.4 }], [{ x: -0.9, y: 0.55 }, { x: -0.9, y: 0.25 }], [{ x: -0.8, y: 0.5 }, { x: -1, y: 0.3 }], [{ x: -1, y: 0.5 }, { x: -0.8, y: 0.3 }]];
       }
@@ -28172,11 +28152,7 @@ var SomeMulti = function () {
       var extra;
 
       if (arrowData.angle > -Math.PI / 4 && arrowData.angle < Math.PI / 4) {
-        extra = [[{ x: 0, y: -0.4 }, { x: -0.2, y: -0.4 }], [{ x: -0.1, y: -0.5 }, { x: -0.1, y: -0.3 }]];
-      } else if (arrowData.angle < 3 * Math.PI / 4 && arrowData.angle > 0) {
         extra = [[{ x: -0.8, y: -0.4 }, { x: -1, y: -0.4 }], [{ x: -0.9, y: -0.5 }, { x: -0.9, y: -0.3 }]];
-      } else if (arrowData.angle > -3 * Math.PI / 4 && arrowData.angle < 0) {
-        extra = [[{ x: 0, y: 0.4 }, { x: -0.2, y: 0.4 }], [{ x: -0.1, y: 0.5 }, { x: -0.1, y: 0.3 }]];
       } else {
         extra = [[{ x: -0.8, y: 0.4 }, { x: -1, y: 0.4 }], [{ x: -0.9, y: 0.5 }, { x: -0.9, y: 0.3 }]];
       }
