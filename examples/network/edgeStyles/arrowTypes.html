@@ -29,7 +29,15 @@
     {id: 1, label: 'A'},
     {id: 2, label: 'B'},
     {id: 3, label: 'C'},
-    {id: 4, label: 'D'}
+    {id: 4, label: 'D'},
+    {id: 5, label: 'E'},
+    {id: 6, label: 'F'},
+    {id: 7, label: 'G'},
+    {id: 8, label: 'H'},
+    {id: 9, label: 'I'},
+    {id: 10, label: 'J'},
+    {id: 11, label: 'K'},
+    {id: 12, label: 'L'}
   ]);
 
   // create an array with edges
@@ -38,19 +46,75 @@
     {from: 2, to: 3, arrows:{
       to: {
         enabled: true,
-        type: 'alwaysuni',
+        type: 'circle',
         scaleFactor: 1.5
       },
       from: {
         enabled: true,
-        type: 'alwaysbroad',
+        type: 'bar',
         scaleFactor: 1.5
       }
     }},
     {from: 3, to: 4, arrows:{
       to: {
         enabled: true,
+        type: 'alwaysbroad',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 4, to: 5, arrows:{
+      to: {
+        enabled: true,
         type: 'alwaysmulti',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 5, to: 6, arrows:{
+      to: {
+        enabled: true,
+        type: 'alwaysuni',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 6, to: 7, arrows:{
+      to: {
+        enabled: true,
+        type: 'neverbroad',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 7, to: 8, arrows:{
+      to: {
+        enabled: true,
+        type: 'nevermulti',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 8, to: 9, arrows:{
+      to: {
+        enabled: true,
+        type: 'neveruni',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 9, to: 10, arrows:{
+      to: {
+        enabled: true,
+        type: 'somebroad',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 10, to: 11, arrows:{
+      to: {
+        enabled: true,
+        type: 'somemulti',
+        scaleFactor: 1.5
+      }
+    }},
+    {from: 11, to: 12, arrows:{
+      to: {
+        enabled: true,
+        type: 'someuni',
         scaleFactor: 1.5
       }
     }},

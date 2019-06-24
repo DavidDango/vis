@@ -5,7 +5,7 @@
  * A dynamic, browser-based visualization library.
  *
  * @version 4.21.0
- * @date    2019-06-18
+ * @date    2019-06-24
  *
  * @license
  * Copyright (C) 2011-2017 Almende B.V, http://almende.com
@@ -27643,7 +27643,7 @@ var Bar = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Always Broadcast endpoint.
  */
 
 
@@ -27716,7 +27716,7 @@ var AlwaysBroad = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Always Multicast endpoint.
  */
 
 
@@ -27789,7 +27789,7 @@ var AlwaysMulti = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Always Unicast endpoint.
  */
 
 
@@ -27841,7 +27841,7 @@ var AlwaysUni = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Never Broadcast endpoint.
  */
 
 
@@ -27911,7 +27911,7 @@ var NeverBroad = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Never Multicast endpoint.
  */
 
 
@@ -27981,7 +27981,7 @@ var NeverMulti = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Never Unicast endpoint.
  */
 
 
@@ -28030,7 +28030,7 @@ var NeverUni = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Sometimes Broadcast endpoint.
  */
 
 
@@ -28114,7 +28114,7 @@ var SomeBroad = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Sometimes Multicast endpoint.
  */
 
 
@@ -28198,7 +28198,7 @@ var SomeMulti = function () {
 }();
 
 /**
- * Drawing methods for the bar endpoint.
+ * Drawing methods for the Sometimes Unicast endpoint.
  */
 
 
